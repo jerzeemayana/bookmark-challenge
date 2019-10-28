@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   
   
   <title>Frontend Mentor | Bookmark landing page</title>
@@ -31,11 +33,13 @@
     }
 
     
-    @media (max-width: 375px) {
+    @media all and (min-device-width: 200px) and (max-device-width: 400px){
 
       body{
         font-family: 'Rubik', sans-serif;
         font-size: 18px;
+        padding: 0;
+        margin: 0;
       }
       .logo-1 {
       margin-top: 1px;
@@ -46,7 +50,7 @@
       padding-left: 200px;
       line-height: 100px;
       padding-top: 30px;
-      background-color: pink;
+      background-color: hsl(231, 69%, 60%);
       position: fixed;
       width: 100%;
       height: 80vh;
@@ -65,7 +69,7 @@
     }
     .hamburger {
       position: relative;
-      margin-left: 420px;
+      margin-left: 90%;
       margin-top: -27px;
       cursor: pointer;
       z-index: 999;
@@ -83,16 +87,17 @@
       background-color: hsl(231, 69%, 60%);
       height: 40vh;
       margin-top: 50px;
-      clip-path: circle(500px at 90% -50% );
+      clip-path: circle(344px at 90% -50% );
       z-index: -99;
-      margin-left: 15px;
-      margin-right: 15px;
+      margin-left: 10%;
+     
+      width: 100%;
     }
     .blue-bg-logo {
       margin-bottom: 40px;
       position: absolute;
-      bottom: 164px;
-      right: 21px;
+      bottom: 20%;
+      left: 1%;
     }
 
     section {
@@ -142,18 +147,19 @@
       list-style: none;
       line-height: 60px;
       font-size: 20px;
+      
     }
     hr {
-      margin-right: 10px;
+      margin-right: 10%;
     }
     .bg-color {
       background-color: hsl(231, 69%, 60%);
       height: 40vh;
       margin-top: 50px;
-      clip-path: circle(500px at 4% -50% );
+      clip-path: circle(340px at 7% -50% );
       z-index: -99;
-      margin-left: 15px;
-      margin-right: 15px;
+      margin-left: 0%;
+     
     }
     #overall-bg{
       position: relative;
@@ -161,18 +167,19 @@
     .bg-img {
       margin-bottom: -90px;
       position: absolute;
-      bottom: 188px;
-      right: 2px;
+      bottom: 70%;
+      right: 6%;
     }
     .card-bg{
       
       width: 60%;
-      margin-left: 100px;
-      height: 56vh;
+      margin-left: 22%;
+      height: 72vh;
       box-shadow: 5px 5px 10px rgb(223, 218, 218);
+
     }
     .chrome-log {
-      margin-left: 80px;
+      margin-left: 27%;
       margin-bottom: 25px;
     }
     .c-logo {
@@ -191,15 +198,15 @@
       background:  hsl(231, 69%, 60%);
       color: white;
       padding: 15px 23px 15px 23px;
-      font-size: 12px;
-      margin: 14px 0px 0px 45px;
+      font-size: 10px;
+      margin: 14px 0px 0px 15%;
     }
 
     #menu-dp li{
       font-size: 18px;
       word-spacing: 12px;
       list-style-type: none;
-      line-height: 55px;
+      line-height: 20px;
 
     }
     #menu-dp hr {
@@ -207,19 +214,22 @@
       
     }
     .arrow1 {
-      padding-left: 167px;
+      padding-left: 80%;
       cursor: pointer;
+      
     }
     .arrow3 {
-      padding-left: 130px;
+      padding-left: 80%;
       cursor: pointer;
     }
     .arrow2 {
       cursor: pointer;
+      padding-left: 80%;
     }
 
     .arrow4 {
       cursor: pointer;
+      padding-left: 80%;
     }
     #centre {
       margin-left: 35%;
@@ -227,7 +237,8 @@
 
     .bg-height {
       background: hsl(231, 69%, 60%);
-      height: 62vh;
+      height: 100vh;
+      width: 110%;
     }
     .last-text {
       text-align: center;
@@ -270,7 +281,8 @@
     }
     #overall-last-bg {
       background: hsl(229, 31%, 21%);
-      height: 48vh;
+      height: 70vh;
+      width: 110%;
 
     }
     .ls-logo {
@@ -323,9 +335,9 @@
       
     </div>
     <div class="blue-bg-logo">
-      <img src="./images/illustration-hero.svg" width="470px" height="240px">
+      <img src="./images/illustration-hero.svg" width="390px" height="240px">
     </div>
-    <div class="text">
+    <div class="text"><br><br>
       <h3>A Simple BookMark</h3>
       <h3>Manager</h3>
       <p>A clean and simple interface to organize your favourite websites. Open a new browser site and see our site loads instantly. Try it for free.</p>
@@ -349,13 +361,13 @@
         <hr>
         
       </ol>
-    </div>
+    </div><br>
     <div id="overall-bg">
     <div class="bg-color">
       
     </div><br><br><br><br>
     <div class="bg-img">
-      <img src="./images/illustration-features-tab-1.svg" width="420px" height="240px">
+      <img src="./images/illustration-features-tab-1.svg" width="310px" height="197px">
     </div>
 
     </div>
@@ -369,7 +381,7 @@
           <p>Our aim is to make it easy for you to access your favorite website. Your bookmark sync between your devices so you can access them on the go.</p><br><br>
         </div>
 
-        <div class="card-bg">
+        <div data-aos="flip-right"  class="card-bg">
           <div class="chrome-log">
           <img src="./images/logo-chrome.svg" class="c-logo">
           </div>
@@ -378,13 +390,13 @@
             <h5>Minimum Version 62</h5>
           </div>
           <div class="dotted">
-            <img src="./images/bg-dots.svg">
+            <img src="./images/bg-dots.svg" width="220px">
           </div>
           <div class="add-button">
             <button class="btn-bg">Add and Install Extension</button>
           </div>
         </div><br><br><br>
-        <div class="card-bg">
+        <div data-aos="flip-right" class="card-bg">
             <div class="chrome-log">
             <img src="./images/logo-firefox.svg" class="c-logo">
             </div>
@@ -393,13 +405,13 @@
               <h5>Minimum Version 62</h5>
             </div>
             <div class="dotted">
-              <img src="./images/bg-dots.svg">
+              <img src="./images/bg-dots.svg" width="220px">
             </div>
             <div class="add-button">
               <button class="btn-bg">Add and Install Extension</button>
             </div>
           </div><br><br><br>
-          <div class="card-bg">
+          <div data-aos="flip-right" class="card-bg">
               <div class="chrome-log">
               <img src="./images/logo-opera.svg" class="c-logo">
               </div>
@@ -408,7 +420,7 @@
                 <h5>Minimum Version 62</h5>
               </div>
               <div class="dotted">
-                <img src="./images/bg-dots.svg">
+                <img src="./images/bg-dots.svg" width="220px">
               </div>
               <div class="add-button">
                 <button class="btn-bg">Add and Install Extension</button>
@@ -450,7 +462,7 @@
                 <div class="ls-logo">
                   <img src="./images/logo-bookmark22.svg">
                 </div>
-                <div class="footer-lists">
+                <div  data-aos="fade-up-right" class="footer-lists">
                   <ol>
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Pricing</a></li>
@@ -471,7 +483,15 @@
 
   
   
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
   
+  <script type="text/javascript">
+  
+  AOS.init({
+    duration: 2000,
+  });
+
+  </script>
 </body>
 <script src="index.js"></script>
 </html>
