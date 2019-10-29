@@ -15,7 +15,6 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     
-
     .logo-1 {
       padding-top: 27px;
       padding-left: 15px;
@@ -31,10 +30,8 @@
       text-decoration: none;
       color: black;
     }
-
     
     @media all and (min-device-width: 200px) and (max-device-width: 400px){
-
       body{
         font-family: 'Rubik', sans-serif;
         font-size: 18px;
@@ -90,7 +87,7 @@
       clip-path: circle(344px at 90% -50% );
       z-index: -99;
       margin-left: 10%;
-     
+      position: relative;
       width: 100%;
     }
     .blue-bg-logo {
@@ -99,25 +96,21 @@
       bottom: 20%;
       left: 1%;
     }
-
     section {
       padding-top: 60px;
     }
     .text {
       text-align: center;
     }
-
     .text h3 {
       font-size: 25px;
       line-height: 15px;
     }
-
     .text p {
       font-size: 20px;
       padding-left: 12px;
       padding-right: 12px;
     }
-
     .img-btn {
       margin-left: 4%;
       display: flex;
@@ -176,7 +169,6 @@
       margin-left: 22%;
       height: 72vh;
       box-shadow: 5px 5px 10px rgb(223, 218, 218);
-
     }
     .chrome-log {
       margin-left: 27%;
@@ -191,7 +183,6 @@
     .dotted {
       padding: 0px 1px 0px -12px;
     }
-
     .btn-bg {
       border: 5px solid  hsl(231, 69%, 60%);
       border-radius: 5px;
@@ -201,13 +192,11 @@
       font-size: 10px;
       margin: 14px 0px 0px 15%;
     }
-
     #menu-dp li{
       font-size: 18px;
       word-spacing: 12px;
       list-style-type: none;
       line-height: 20px;
-
     }
     #menu-dp hr {
       margin-right: 60px;
@@ -226,7 +215,6 @@
       cursor: pointer;
       padding-left: 80%;
     }
-
     .arrow4 {
       cursor: pointer;
       padding-left: 80%;
@@ -234,11 +222,15 @@
     #centre {
       margin-left: 35%;
     }
-
     .bg-height {
       background: hsl(231, 69%, 60%);
       height: 85vh;
-      width: 110%;
+      width: 109.7%;
+    }
+
+    section{
+      padding: 0;
+      margin: 0;
     }
     .last-text {
       text-align: center;
@@ -252,9 +244,6 @@
     .last-text p {
       font-size: 40px;
     }
-
-
-
     .input-field {
       display: flex;
       flex-direction: column;
@@ -265,7 +254,6 @@
       padding: 15px;
       border-radius: 10px;
     }
-
     .input-field button {
       padding: 15px;
       border-radius: 10px;
@@ -277,23 +265,20 @@
     .footer-lists li a {
       text-decoration: none;
       color: rgb(212, 209, 209);
-
     }
     #overall-last-bg {
       background: hsl(229, 31%, 21%);
       height: 70vh;
       width: 110%;
-
     }
     .ls-logo {
-      margin-left: 34%;
+      margin-left: 24%;
       padding-top: 5%;
       
     }
-
     .footer-lists li {
       list-style-type: none;
-      padding-left: 38%;
+      padding-left: 30%;
       line-height: 49px;
       font-size: 22px;
       
@@ -301,7 +286,7 @@
     .footer-icons {
       display: grid;
       grid-template-columns: 25% 25%;
-      padding-left: 40%;
+      padding-left: 34%;
       
     }
     
@@ -458,7 +443,7 @@
                   <button>Contact Us</button>
                 </div>
               </div>
-              <div id="overall-last-bg">
+              <div id="overall-last-bg"><br><br>
                 <div class="ls-logo">
                   <img src="./images/logo-bookmark22.svg">
                 </div>
@@ -490,7 +475,6 @@
   AOS.init({
     duration: 2000,
   });
-
   </script>
 </body>
 <script src="index.js"></script>
