@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styling.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -12,303 +12,7 @@
   
   <title>Frontend Mentor | Bookmark landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    
 
-    .logo-1 {
-      padding-top: 27px;
-      padding-left: 15px;
-    }
-    ul {
-      display: flex;
-      justify-content: space-evenly;
-      list-style: none;
-      padding-left: 60em;
-      margin-top: -20px;
-    }
-    ul li a {
-      text-decoration: none;
-      color: black;
-    }
-
-    
-    @media all and (min-device-width: 200px) and (max-device-width: 400px){
-
-      body{
-        font-family: 'Rubik', sans-serif;
-        font-size: 18px;
-        padding: 0;
-        margin: 0;
-      }
-      .logo-1 {
-      margin-top: 1px;
-      padding-left: 15px;
-    }
-    ul {
-      display: block;
-      padding-left: 200px;
-      line-height: 100px;
-      padding-top: 30px;
-      background-color: hsl(231, 69%, 60%);
-      position: fixed;
-      width: 100%;
-      height: 80vh;
-      margin-top: -60px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 16px;
-      clip-path: circle(100px at 90% -10% );
-      -webkit-clip-path: circle(100px at 90% -10% );
-      transition: all 1s  ease-out;
-      cursor: pointer;
-      z-index: 999;
-    }
-    ul.open {
-      clip-path: circle(1000px at 90% -10% );
-      -webkit-clip-path: circle(1000px at 90% -10% );
-    }
-    .hamburger {
-      position: relative;
-      margin-left: 90%;
-      margin-top: -27px;
-      cursor: pointer;
-      z-index: 999;
-    }
-    .line {
-      width: 30px;
-      height: 3px;
-      background: black;
-      margin: 5px;
-      
-    
-     
-    }
-    .blue-bg {
-      background-color: hsl(231, 69%, 60%);
-      height: 40vh;
-      margin-top: 50px;
-      clip-path: circle(344px at 90% -50% );
-      z-index: -99;
-      margin-left: 10%;
-     
-      width: 100%;
-    }
-    .blue-bg-logo {
-      margin-bottom: 40px;
-      position: absolute;
-      bottom: 20%;
-      left: 1%;
-    }
-
-    section {
-      padding-top: 60px;
-    }
-    .text {
-      text-align: center;
-    }
-
-    .text h3 {
-      font-size: 25px;
-      line-height: 15px;
-    }
-
-    .text p {
-      font-size: 20px;
-      padding-left: 12px;
-      padding-right: 12px;
-    }
-
-    .img-btn {
-      margin-left: 4%;
-      display: flex;
-      justify-content: space-evenly;
-      
-    }
-    .chrome {
-      border: 5px solid  hsl(231, 69%, 60%);
-      border-radius: 5px;
-      background:  hsl(231, 69%, 60%);
-      color: rgba(211, 210, 210, 0.966);
-      padding: 15px;
-      font-size: 12px;
-    }
-    .firefox {
-      border: 5px solid rgba(241, 226, 213, 0.993);
-      border-radius: 5px;
-      background:  rgba(241, 226, 213, 0.993);
-      color: white;
-      padding: 15px;
-      font-size: 11px;
-      box-shadow: 5px 5px 10px rgb(223, 218, 218);
-    }
-    .options ol li {
-      text-align: center;
-      text-decoration: none;
-      list-style: none;
-      line-height: 60px;
-      font-size: 20px;
-      
-    }
-    hr {
-      margin-right: 10%;
-    }
-    .bg-color {
-      background-color: hsl(231, 69%, 60%);
-      height: 40vh;
-      margin-top: 50px;
-      clip-path: circle(340px at 7% -50% );
-      z-index: -99;
-      margin-left: 0%;
-     
-    }
-    #overall-bg{
-      position: relative;
-    }
-    .bg-img {
-      margin-bottom: -90px;
-      position: absolute;
-      bottom: 70%;
-      right: 6%;
-    }
-    .card-bg{
-      
-      width: 60%;
-      margin-left: 22%;
-      height: 72vh;
-      box-shadow: 5px 5px 10px rgb(223, 218, 218);
-
-    }
-    .chrome-log {
-      margin-left: 27%;
-      margin-bottom: 25px;
-    }
-    .c-logo {
-      margin-top: 20px;
-    }
-    .write-up{
-      text-align: center;
-    }
-    .dotted {
-      padding: 0px 1px 0px -12px;
-    }
-
-    .btn-bg {
-      border: 5px solid  hsl(231, 69%, 60%);
-      border-radius: 5px;
-      background:  hsl(231, 69%, 60%);
-      color: white;
-      padding: 15px 23px 15px 23px;
-      font-size: 10px;
-      margin: 14px 0px 0px 15%;
-    }
-
-    #menu-dp li{
-      font-size: 18px;
-      word-spacing: 12px;
-      list-style-type: none;
-      line-height: 20px;
-
-    }
-    #menu-dp hr {
-      margin-right: 60px;
-      
-    }
-    .arrow1 {
-      padding-left: 80%;
-      cursor: pointer;
-      
-    }
-    .arrow3 {
-      padding-left: 80%;
-      cursor: pointer;
-    }
-    .arrow2 {
-      cursor: pointer;
-      padding-left: 80%;
-    }
-
-    .arrow4 {
-      cursor: pointer;
-      padding-left: 80%;
-    }
-    #centre {
-      margin-left: 35%;
-    }
-
-    .bg-height {
-      background: hsl(231, 69%, 60%);
-      height: 100vh;
-      width: 110%;
-    }
-    .last-text {
-      text-align: center;
-      color: white;
-      padding-top: 10px;
-    }
-    .last-text h1 {
-      color: rgb(212, 209, 209);
-      padding-top: 12px;
-    }
-    .last-text p {
-      font-size: 40px;
-    }
-
-
-
-    .input-field {
-      display: flex;
-      flex-direction: column;
-      padding-right: 40px;
-      padding-left: 40px;
-    }
-    input {
-      padding: 15px;
-      border-radius: 10px;
-    }
-
-    .input-field button {
-      padding: 15px;
-      border-radius: 10px;
-      background: hsl(0, 94%, 66%);
-      color: white;
-      font-size: 16px;
-    
-    }
-    .footer-lists li a {
-      text-decoration: none;
-      color: rgb(212, 209, 209);
-
-    }
-    #overall-last-bg {
-      background: hsl(229, 31%, 21%);
-      height: 70vh;
-      width: 110%;
-
-    }
-    .ls-logo {
-      margin-left: 35%;
-      padding-top: 5%;
-      
-    }
-
-    .footer-lists li {
-      list-style-type: none;
-      padding-left: 38%;
-      line-height: 46px;
-      font-size: 22px;
-      
-    }
-    .footer-icons {
-      display: grid;
-      grid-template-columns: 25% 25%;
-      padding-left: 40%;
-      
-    }
-    
-    
-}
-    
-  </style>
 </head>
 <body>
     <img src="./images/logo-bookmark.svg" class="logo-1">
@@ -346,17 +50,17 @@
       <button class="chrome">Get it on Chrome</button>
       <button class="firefox">Get it on Firefox</button>
     </div><br><br><br><br>
-    <div class="text">
+    <div class="text" id="text1">
       <h3>Features</h3>
       <p>Our aim is to make it easy for you to access your favorite website. Your bookmark sync between your devices so you can access them on the go.</p><br><br>
     </div>
     <div class="options">
       <ol>
-        <hr>
+        <hr class="hrr">
         <li>Simple Bookmarking</li>
-        <hr>
-        <li>Easy Searching</li>
-        <hr>
+        <hr class="hrr">
+        <li>Speedy Searching</li>
+        <hr class="hrr">
         <li>Easy Sharing</li>
         <hr>
         
@@ -371,17 +75,20 @@
     </div>
 
     </div>
-    <div class="text">
+    <div class="text" id="test3">
         <h3>Bookmark in one click</h3>
         <p>Organise your bookmark how you like. Our simple drag and drop interface gives you control over how you manage your favourite sites</p><br><br>
+        <div class="get-it">
+          <button class="bonton" id="middle">More Information</button>
+      </div>
       </div>
 
-      <div class="text">
+      <div class="text" id="extension">
           <h3>Download the Extension</h3>
           <p>Our aim is to make it easy for you to access your favorite website. Your bookmark sync between your devices so you can access them on the go.</p><br><br>
         </div>
-
-        <div data-aos="flip-right"  class="card-bg">
+        <div class="controller">
+        <div data-aos="flip-right"  class="card-bg" >
           <div class="chrome-log">
           <img src="./images/logo-chrome.svg" class="c-logo">
           </div>
@@ -396,7 +103,7 @@
             <button class="btn-bg">Add and Install Extension</button>
           </div>
         </div><br><br><br>
-        <div data-aos="flip-right" class="card-bg">
+        <div data-aos="flip-right" class="card-bg" id="bg-1">
             <div class="chrome-log">
             <img src="./images/logo-firefox.svg" class="c-logo">
             </div>
@@ -411,7 +118,7 @@
               <button class="btn-bg">Add and Install Extension</button>
             </div>
           </div><br><br><br>
-          <div data-aos="flip-right" class="card-bg">
+          <div data-aos="flip-right" class="card-bg" id="bg-2">
               <div class="chrome-log">
               <img src="./images/logo-opera.svg" class="c-logo">
               </div>
@@ -426,7 +133,8 @@
                 <button class="btn-bg">Add and Install Extension</button>
               </div>
             </div><br><br>
-            <div class="text">
+        </div>
+            <div class="text" id="extension">
                 <h3>Frequently Asked</h3>
                 <h3>Questions</h3>
                 <p>A clean and simple interface to organize your favourite websites. Open a new browser site and see our site loads instantly. Try it for free.</p>
@@ -458,7 +166,7 @@
                   <button>Contact Us</button>
                 </div>
               </div>
-              <div id="overall-last-bg">
+              <div id="overall-last-bg"><br><br>
                 <div class="ls-logo">
                   <img src="./images/logo-bookmark22.svg">
                 </div>
@@ -490,7 +198,6 @@
   AOS.init({
     duration: 2000,
   });
-
   </script>
 </body>
 <script src="index.js"></script>
